@@ -18,11 +18,11 @@ public class DisplayMessageActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
         // Get the intent that started this activity and parse the string
         Intent intent = getIntent();
-        String mesg = intent.getStringExtra(MainActivity.EXTRA_MESG);
+        String message = intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
 
-        // Capture the layout's TextView and set the string as its ttext
+        // Capture the layout's TextView and set the string as its text
         TextView textView = binding.textDisplayView; // view binding example
-        textView.setText(mesg);
+        textView.setText(message);
 
     }
 }
